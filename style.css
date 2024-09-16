@@ -1,0 +1,343 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f1f2f6;
+    overflow: hidden;
+    
+  }
+
+#container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.sidebar {
+   margin: 12px;
+   margin-left: 10px;
+    flex: 0 0 15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffffff;
+    border-radius: 13px;
+    transition: left 1s;
+}
+
+
+
+
+#leftSide {
+    position: absolute;
+    top:22.84px;
+    right:8px;
+    display: flex;
+    width:74px;
+}
+
+#leftSide i {
+    width: 19.52px;
+    height: 19.7px;
+    top: 22.16px;
+    color:#05877d;
+}
+
+
+
+
+.sidebar-close {
+    flex: 0 0 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffffff; 
+    transition: all 1s;  
+}
+
+.content {
+    flex: 0 0 85%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-close {
+    flex: 0 0 95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+
+
+#icon {
+    position: absolute;
+    top:20px;
+    right:-20px;
+    padding:10px;
+    width:35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#icon i {
+    background-color: #05877d;
+    color:#ffffff;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    padding:8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#log{
+    transform: rotateX(180deg);
+    margin-top: 10px;
+}
+
+#logo {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    width: 61.88px;
+    height: 70.59px;
+    left: 115px;
+    gap: 10px;
+
+}
+
+
+#logo h1{
+   font-family: "Rubik", sans-serif;
+   font-size: 24px;
+   font-weight: lighter;
+   width: 107px;
+   top: 120px;
+   left: 92px;
+   
+
+
+}
+
+
+
+#links {
+    flex : 0 0 65%;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+
+
+#close-sidebar li {
+    width:100%;   
+}
+
+#open-sidebar a{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-weight: lighter;
+      
+
+    
+}
+
+
+
+ul .li {
+    display: flex;
+     width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:15px;
+    transition: all 1s
+}
+
+ul .li i {
+    flex : 0 0 15%;
+    width:100%;
+    
+}
+
+ul .li li {
+    flex : 0 0 85%; 
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width:100%;
+    
+}
+
+ul li {
+  
+    margin: 3px 0; /* Space between list items */
+    width:100%;
+}
+
+ul li a {
+   
+    display: block; /* Makes each link a block element */
+    padding: 8px;
+    text-decoration: none; /* Remove underline */
+    color:black;
+}
+
+ul li a:hover {
+    background-color: #f1f1f1; /* Change background color on hover */
+    color: #05877d; /* Change text color on hover */
+}
+
+
+
+
+#profile {
+    flex : 0 0 15%;
+    display: flex;
+    align-items: center;
+    
+}
+#profile img {
+    width:40px;
+    height:40px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+#profile p {
+    font-size: 24px;
+    font-family: "Rubik",sans-serif;
+    font-size: 12px;
+    font-family: "Rubik";
+    font-weight: lighter;
+    top: 734px;
+}
+#form {
+    width:486px;
+    height:367px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#form #header {
+    width: 276px;
+    height: 40px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 34px;
+    line-height: 40.29px;
+  
+
+}
+
+
+#form #select-box,#form .select-item {
+    flex : 0 0 40%;
+    display: flex;
+   
+    width:100%;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+#form #select-box select {
+    height:45px;
+    padding: 15px;
+    border:1.5px solid #05877d;
+    background-color: #f1f2f6;
+    border-radius: 3px;
+    outline: none;
+    appearance: none;
+}
+#form .select-item::before {
+    content: '|'; /* Font Awesome Unicode for a down arrow */
+    font-family: 'Font Awesome 5 Free'; /* Use the Font Awesome family */
+    font-weight: 900; /* Font Awesome requires the 900 weight for solid icons */
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents arrow from blocking clicks */
+    color: #05877d; /* Customize icon color */
+    font-size: 25px; /* Customize icon size */
+}
+
+#form .select-item::after {
+    content: '\f078'; /* Font Awesome Unicode for a down arrow */
+    font-family: 'Font Awesome 5 Free'; /* Use the Font Awesome family */
+    font-weight: 900; /* Font Awesome requires the 900 weight for solid icons */
+    position: absolute;
+    right: 25px;
+    top: 55%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents arrow from blocking clicks */
+    color: #05877d; /* Customize icon color */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#form button {
+    flex : 0 0 15%;
+    height:45px;
+    width: 486px;
+    top: 557px;
+    left: 686px;
+    background-color: #05877d;
+    border: 1px;
+    border-radius: 2px;
+}
+#search{
+   width: 46px;
+   height: 17px;
+   top: 575px;
+   left: 906px;
+   font-family: "Rubik", sans-serif;
+   font-weight: 400;
+   line-height: 16.59px;
+   color: #ffffff;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+ 
